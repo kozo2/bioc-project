@@ -54,7 +54,7 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RENV_PATHS_ROOT: ~/.local/share/renv/
       RENV_DOWNLOAD_METHOD: "curl"
-      RENV_CONFIG_REPOS_OVERRIDE: "https://cloud.r-project.org,https://bioconductor.org/packages/3.19/bioc,https://carpentries.r-universe.dev"
+      RENV_CONFIG_REPOS_OVERRIDE: "https://cloud.r-project.org,https://bioconductor.org/packages/3.19/bioc,https://bioconductor.org/packages/3.19/data/annotation,https://bioconductor.org/packages/3.19/data/experiment,https://bioconductor.org/packages/3.19/workflows,https://bioconductor.org/packages/3.19/books,https://carpentries.r-universe.dev,https://carpentries.github.io/drat"
       _R_CHECK_SYSTEM_CLOCK_: "FALSE"
       NOT_CRAN: "true"
       CHIVE: ${{ github.workspace }}/site/chive
@@ -112,7 +112,10 @@ jobs:
             BioCsoft = "https://bioconductor.org/packages/3.19/bioc",
             BioCann = "https://bioconductor.org/packages/3.19/data/annotation",
             BioCexp = "https://bioconductor.org/packages/3.19/data/experiment",
-            carpentries = "https://carpentries.r-universe.dev"
+            BioCworkflows = "https://bioconductor.org/packages/3.19/workflows",
+            BioCbooks = "https://bioconductor.org/packages/3.19/books",
+            carpentries = "https://carpentries.r-universe.dev",
+            carpentries_archive = "https://carpentries.github.io/drat"
           ))
           options(timeout = 300)
           Sys.setenv(RENV_DOWNLOAD_METHOD = "curl")
