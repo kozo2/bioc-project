@@ -185,6 +185,12 @@ listMarts()
 ```
 
 ``` output
+Possible SSL connectivity problems detected.
+Please report this issue at https://github.com/grimbough/biomaRt/issues
+Error in req_perform(useast) : HTTP 403 Forbidden.
+```
+
+``` output
                biomart                version
 1 ENSEMBL_MART_ENSEMBL      Ensembl Genes 115
 2   ENSEMBL_MART_MOUSE      Mouse strains 115
