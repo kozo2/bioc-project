@@ -149,7 +149,7 @@ BiocManager::valid()
 ```
 
 ``` warning
-Warning: 45 packages out-of-date; 0 packages too new
+Warning: 49 packages out-of-date; 0 packages too new
 ```
 
 ``` output
@@ -183,12 +183,12 @@ loaded via a namespace (and not attached):
  [1] BiocManager_1.30.26 compiler_4.4.3      fastmap_1.2.0      
  [4] cli_3.6.5           htmltools_0.5.8.1   tools_4.4.3        
  [7] yaml_2.3.10         rmarkdown_2.30      knitr_1.50         
-[10] digest_0.6.37       xfun_0.53           rlang_1.2.0        
-[13] renv_1.2.2          evaluate_1.0.5     
+[10] digest_0.6.37       xfun_0.53           rlang_1.1.6        
+[13] renv_1.2.3          evaluate_1.0.5     
 
 Bioconductor version '3.19'
 
-  * 45 packages out-of-date
+  * 49 packages out-of-date
   * 0 packages too new
 
 create a valid installation with
@@ -197,10 +197,10 @@ create a valid installation with
     "backports", "base64enc", "BH", "bibtex", "BiocManager", "bit64", "blob",
     "bookdown", "bslib", "cli", "cpp11", "curl", "DBI", "dbplyr", "digest",
     "dplyr", "fs", "futile.logger", "glue", "highr", "hms", "htmltools",
-    "httr", "httr2", "knitr", "lazyeval", "lubridate", "magrittr", "openssl",
-    "png", "purrr", "rappdirs", "Rcpp", "RCurl", "renv", "rmarkdown",
-    "RSQLite", "stringr", "tibble", "tidyr", "tinytex", "xfun", "XML", "xml2",
-    "yaml"
+    "httr", "httr2", "knitr", "lazyeval", "lifecycle", "lubridate", "magrittr",
+    "openssl", "png", "purrr", "rappdirs", "Rcpp", "RCurl", "renv", "rlang",
+    "rmarkdown", "RSQLite", "stringr", "tibble", "tidyr", "timechange",
+    "tinytex", "vctrs", "xfun", "XML", "xml2", "yaml"
   ), update = TRUE, ask = FALSE, force = TRUE)
 
 more details: BiocManager::valid()$too_new, BiocManager::valid()$out_of_date
@@ -279,7 +279,7 @@ length(BiocManager::available())
 ```
 
 ``` output
-[1] 27273
+[1] 27206
 ```
 
 Specifically, the union of current Bioconductor repositories and other repositories on the search path can be displayed as follows.
