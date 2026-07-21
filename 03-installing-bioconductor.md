@@ -149,7 +149,7 @@ BiocManager::valid()
 ```
 
 ``` warning
-Warning: 49 packages out-of-date; 0 packages too new
+Warning: 51 packages out-of-date; 0 packages too new
 ```
 
 ``` output
@@ -188,7 +188,7 @@ loaded via a namespace (and not attached):
 
 Bioconductor version '3.19'
 
-  * 49 packages out-of-date
+  * 51 packages out-of-date
   * 0 packages too new
 
 create a valid installation with
@@ -198,9 +198,9 @@ create a valid installation with
     "bookdown", "bslib", "cli", "cpp11", "curl", "DBI", "dbplyr", "digest",
     "dplyr", "fs", "futile.logger", "glue", "highr", "hms", "htmltools",
     "httr", "httr2", "knitr", "lazyeval", "lifecycle", "lubridate", "magrittr",
-    "openssl", "png", "purrr", "rappdirs", "Rcpp", "RCurl", "renv", "rlang",
-    "rmarkdown", "RSQLite", "stringr", "tibble", "tidyr", "timechange",
-    "tinytex", "vctrs", "xfun", "XML", "xml2", "yaml"
+    "openssl", "png", "purrr", "rappdirs", "Rcpp", "RCurl", "renv", "restfulr",
+    "rlang", "rmarkdown", "RSQLite", "stringr", "tibble", "tidyr",
+    "timechange", "tinytex", "vctrs", "withr", "xfun", "XML", "xml2", "yaml"
   ), update = TRUE, ask = FALSE, force = TRUE)
 
 more details: BiocManager::valid()$too_new, BiocManager::valid()$out_of_date
@@ -279,7 +279,7 @@ length(BiocManager::available())
 ```
 
 ``` output
-[1] 27206
+[1] 27824
 ```
 
 Specifically, the union of current Bioconductor repositories and other repositories on the search path can be displayed as follows.
