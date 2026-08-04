@@ -149,7 +149,7 @@ BiocManager::valid()
 ```
 
 ``` warning
-Warning: 51 packages out-of-date; 0 packages too new
+Warning: 53 packages out-of-date; 0 packages too new
 ```
 
 ``` output
@@ -184,23 +184,24 @@ loaded via a namespace (and not attached):
  [4] cli_3.6.5           htmltools_0.5.8.1   tools_4.4.3        
  [7] yaml_2.3.10         rmarkdown_2.30      knitr_1.50         
 [10] digest_0.6.37       xfun_0.53           rlang_1.1.6        
-[13] renv_1.2.3          evaluate_1.0.5     
+[13] renv_1.2.4          evaluate_1.0.5     
 
 Bioconductor version '3.19'
 
-  * 51 packages out-of-date
+  * 53 packages out-of-date
   * 0 packages too new
 
 create a valid installation with
 
   BiocManager::install(c(
-    "backports", "base64enc", "BH", "bibtex", "BiocManager", "bit64", "blob",
-    "bookdown", "bslib", "cli", "cpp11", "curl", "DBI", "dbplyr", "digest",
-    "dplyr", "fs", "futile.logger", "glue", "highr", "hms", "htmltools",
-    "httr", "httr2", "knitr", "lazyeval", "lifecycle", "lubridate", "magrittr",
-    "openssl", "png", "purrr", "rappdirs", "Rcpp", "RCurl", "renv", "restfulr",
-    "rlang", "rmarkdown", "RSQLite", "stringr", "tibble", "tidyr",
-    "timechange", "tinytex", "vctrs", "withr", "xfun", "XML", "xml2", "yaml"
+    "backports", "base64enc", "BH", "bibtex", "BiocManager", "bit64", "bitops",
+    "blob", "bookdown", "bslib", "cli", "cpp11", "curl", "DBI", "dbplyr",
+    "digest", "dplyr", "fs", "futile.logger", "glue", "highr", "hms",
+    "htmltools", "httr", "httr2", "knitr", "lazyeval", "lifecycle",
+    "lubridate", "magrittr", "openssl", "png", "purrr", "rappdirs", "Rcpp",
+    "RCurl", "renv", "restfulr", "rlang", "rmarkdown", "RSQLite", "stringi",
+    "stringr", "tibble", "tidyr", "timechange", "tinytex", "vctrs", "withr",
+    "xfun", "XML", "xml2", "yaml"
   ), update = TRUE, ask = FALSE, force = TRUE)
 
 more details: BiocManager::valid()$too_new, BiocManager::valid()$out_of_date
@@ -279,7 +280,7 @@ length(BiocManager::available())
 ```
 
 ``` output
-[1] 27824
+[1] 28012
 ```
 
 Specifically, the union of current Bioconductor repositories and other repositories on the search path can be displayed as follows.
